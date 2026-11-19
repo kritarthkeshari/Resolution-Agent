@@ -37,9 +37,9 @@ from schemas import TOOL_SCHEMAS
 from dispatcher import dispatch_tool
 from guardrails import validate_tool_args, check_refund_allowed
 
-# Current Claude model id (Claude 5 family). Sonnet is a strong, economical
-# default for tool-use workloads; swap for another id if you prefer.
-MODEL = "claude-sonnet-5-5"
+# Current Claude model id (Claude 5 family). Haiku is the fastest, cheapest
+# option; swap for "claude-sonnet-5-5" (stronger) or another id if you prefer.
+MODEL = "claude-haiku-5-5"
 MAX_TOKENS = 1024
 
 # Strict execution ceiling. If the agent has not produced a final answer after
